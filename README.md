@@ -1,9 +1,10 @@
 # Pandas: Lectura y manejo de datos con CSV, Excel, Google Sheets y JSON
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LordAguaKate/Pandas/blob/main/Pandas.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LordAguaKate/Pandas/blob/main/Tratamiento_y_Manipulacion_de_Datos.ipynb)
 
 ## Descripción
-Este repositorio contiene un notebook educativo (`Pandas.ipynb`) que muestra, de forma práctica y comentada, cómo utilizar la biblioteca `pandas` para:
+Este repositorio contiene notebooks educativos (`Pandas.ipynb` y `Tratamiento_y_Manipulacion_de_Datos.ipynb`) que muestran, de forma práctica y comentada, cómo utilizar la biblioteca `pandas` para:
 
 - Leer y explorar archivos CSV con diferentes separadores.
 - Leer, explorar y escribir archivos Excel, incluyendo selección de hojas y columnas.
@@ -39,13 +40,13 @@ El objetivo es servir como guía rápida de referencia para tareas frecuentes de
 python -m venv .venv
 .venv\Scripts\activate  # Windows
 pip install --upgrade pip
-pip install pandas openpyxl
+pip install -r requirements.txt
 ```
 
 ## Uso
 
 - **Google Colab (recomendado para prueba rápida):**
-  - Haz clic en el badge “Open In Colab” de arriba para abrir `Pandas.ipynb` directamente en Colab.
+  - Haz clic en los badges “Open In Colab” de arriba para abrir cualquiera de los notebooks directamente en Colab.
   - Sube los archivos de datos requeridos o ajusta las rutas según sea necesario.
 
 - **Local con Jupyter:**
@@ -53,7 +54,7 @@ pip install pandas openpyxl
     ```bash
     jupyter notebook
     ```
-  - Abre `Pandas.ipynb` y ejecuta las celdas.
+  - Abre `Pandas.ipynb` o `Tratamiento_y_Manipulacion_de_Datos.ipynb` y ejecuta las celdas.
 
 ## Archivos de datos esperados
 El notebook hace referencia a archivos de ejemplo que no necesariamente están incluidos en el repositorio. Colócalos en la raíz del proyecto (o ajusta las rutas en el notebook):
@@ -69,9 +70,10 @@ Para Google Sheets, el notebook utiliza un `sheet_id` de ejemplo y construye URL
 ## Estructura del repositorio
 ```
 Pandas/
-├─ Pandas.ipynb        # Notebook con ejemplos paso a paso
-├─ README.md           # Este documento
-└─ requierements.txt   # Paquetes requeridos  
+├─ Pandas.ipynb                                # Notebook con ejemplos paso a paso
+├─ Tratamiento_y_Manipulacion_de_Datos.ipynb   # Notebook complementario
+├─ README.md                                   # Este documento
+└─ requirements.txt                            # Paquetes requeridos
 ```
 
 ## Notas importantes
@@ -84,4 +86,4 @@ Pandas/
 Las mejoras, correcciones y ejemplos adicionales son bienvenidos. Abre un issue o envía un pull request con una descripción clara del cambio.
 
 ## Licencia
-Si no se especifica una licencia, el contenido se considera “All rights reserved”. Considera añadir una licencia (por ejemplo, MIT) si planeas aceptar contribuciones públicas.
+Sin licencia.
